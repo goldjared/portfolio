@@ -1,8 +1,33 @@
 :root {
   background-color: rgb(196, 119, 119);
   color: rgb(83, 83, 83);
+  font-size: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
 }
 
 h1, h2, h3 {
   color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.project {
+  max-width: 150px;
+  background-color: pink;
+  border: solid pink 3px; 
+}
+
+.project-container {
+  display: flex;
+  gap: 10px;
+
 }
