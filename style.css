@@ -1,6 +1,6 @@
 :root {
-  background-color: rgb(196, 119, 119);
-  color: rgb(83, 83, 83);
+  background-color: #3b3d3e;
+  color: rgb(255, 255, 255);
   font-size: 30px;
 }
 
@@ -11,23 +11,43 @@ body {
   align-items: center;
 }
 
+.link-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-box > a {
+  display: flex;
+  flex-direction: row;
+
+}
+img.icon {
+  max-height: 33px;
+  width: auto;
+}
+
 .container {
   max-width: 500px;
 }
 
 h1, h2, h3 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
 .project {
   max-width: 150px;
   background-color: pink;
-  border: solid pink 3px; 
+  border: solid rgb(144, 38, 57) 3px; 
 }
 
 .project-container {
   display: flex;
   gap: 10px;
 
+}
+
+.project-box:hover {
+
+  background-color: #6e7274;
 }
