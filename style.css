@@ -1,24 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', serif;
+
+}
+
 :root {
   background-color: #3b3d3e;
   color: rgb(255, 255, 255);
   font-size: 30px;
 }
 
+nav {
+  background-color: #292a2b;
+  color: white;
+  text-align: center;
+  min-width: 100vw;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
 body {
+  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.container {
+max-width: 500px;
+padding: 3px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+border-left: solid rgb(144, 38, 57) 20px;
+}
+
+.header-container {
+  display: flex;
+}
+
 .link-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.75rem;
 }
 
 .link-box > a {
   display: flex;
   flex-direction: row;
+  text-decoration: underline;
 
 }
 img.icon {
@@ -26,13 +63,15 @@ img.icon {
   width: auto;
 }
 
-.container {
-  max-width: 500px;
-}
-
 h1, h2, h3 {
   color: rgb(255, 255, 255);
-  text-align: center;
+  position: relative;
+  right: 15px;
+}
+
+.skill-box > h4 {
+  position: relative;
+  right: 5px;
 }
 
 .project {
@@ -47,7 +86,10 @@ h1, h2, h3 {
 
 }
 
-.project-box:hover {
+.project-box {
+  padding: 5px;
+}
 
+.project-box:hover {
   background-color: #6e7274;
 }
