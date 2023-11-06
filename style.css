@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Display', serif;
-
+  font-family: "Red Hat Display", serif;
 }
 
 :root {
@@ -33,12 +32,12 @@ body {
 }
 
 .container {
-max-width: 500px;
-padding: 3px;
-display: flex;
-flex-direction: column;
-gap: 10px;
-border-left: solid rgb(144, 38, 57) 20px;
+  max-width: 500px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: solid rgb(144, 38, 57) 20px;
 }
 
 .header-container {
@@ -56,14 +55,15 @@ border-left: solid rgb(144, 38, 57) 20px;
   display: flex;
   flex-direction: row;
   text-decoration: underline;
-
 }
 img.icon {
   max-height: 33px;
   width: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: rgb(255, 255, 255);
   position: relative;
   right: 15px;
@@ -75,15 +75,15 @@ h1, h2, h3 {
 }
 
 .project {
-  max-width: 150px;
+  max-width: 200px;
+  max-height: 125px;
   background-color: pink;
-  border: solid rgb(144, 38, 57) 3px; 
+  border: solid rgb(144, 38, 57) 3px;
 }
 
 .project-container {
   display: flex;
   gap: 10px;
-
 }
 
 .project-box {
