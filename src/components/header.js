@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="http://fonts.googleapis.com/css?family=Red+Hat+Display"
-    />
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link type="image/png" sizes="96x96" rel="icon" href="/images/board.pdf">
-  <title>Blog</title>
-</head>
-<body>
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
 <div class="header-container">
-        <a href="index.html">
+        <a href="/index.html">
           <h1 id="about">Jared Gold</h1>
         </a>
         <div class="link-container">
@@ -46,7 +34,12 @@
         </div>
       </div>
       <div class="page-link">
-        <a href="/index.html">Home</a>
+        <a href="/src/paths/portfolio.html">Portfolio</a>
+        <a href="/src/paths/blog.html">Blog</a>
       </div>
-</body>
-</html>
+    `;
+  }
+}
+
+customElements.define('header-component', Header);
+
