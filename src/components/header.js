@@ -6,7 +6,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <div class="header-container">
-        <a href="/index.html">
+        <a href="/">
           <h1 id="about">Jared Gold</h1>
         </a>
         <div class="link-container">
@@ -34,7 +34,7 @@ class Header extends HTMLElement {
         </div>
       </div>
       <div class="page-link">
-        <a href="/index">Home</a>
+        <a href="https://goldrj.com">Home</a>
         <a href="/projects">Projects</a>
         <a href="/posts">Posts</a>
       </div>
