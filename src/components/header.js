@@ -34,13 +34,11 @@ class Header extends HTMLElement {
         </div>
       </div>
       <div class="page-link">
-        <a href="https://goldrj.com">Home</a>
+        <a href="/index">Home</a>
         <a href="/projects">Projects</a>
-        <a href="/posts">Posts</a>
       </div>
     `;
   }
 }
 
 customElements.define('header-component', Header);
-
