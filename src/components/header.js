@@ -34,7 +34,7 @@ class Header extends HTMLElement {
         </div>
       </div>
       <div class="page-link">
-        <a href="/index">Home</a>
+        <a href="/">Home</a>
         <a href="/projects">Projects</a>
       </div>
     `;
