@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+#underline {
+  text-decoration: underline;
+}
+
 p {
   font-size: large;
 }
@@ -32,15 +36,18 @@ body {
 
 .container {
   /* max-width: 500px; */
-  width: 100%;
+  /* width: 100%; */
   /* overflow-x: hidden; */
-  padding: 3px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-sizing: border-box;
+  /* padding: 3px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 10px; */
+  /* box-sizing: border-box; */
   /* border-left: solid rgb(144, 38, 57) 5px; */
-  height: 100vh;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .page-link {
@@ -86,7 +93,6 @@ h1 {
 
 .header-img-wrapper {
   display: flex;
-  /* gap: 10px; */
   align-items: center;
   position: relative;
   right: 25px;
@@ -118,10 +124,6 @@ h3 {
   position: relative;
 }
 
-h3 {
-  right: 35px;
-}
-
 h4 {
   border-bottom: solid #902639;
   border-radius: 5px;
@@ -135,18 +137,21 @@ h4 {
 
 .project {
   max-width: 200px;
-  /* max-height: 125px; */
   background-color: pink;
-  /* border: solid rgb(144, 38, 57) 3px; */
   border-radius: 5px;
 }
 
-.project-container {
-  padding-top: 25px;
+.content-container {
+  gap: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-box {
   padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 217, 173);
 }
 
 .project-box:hover {

@@ -21,5 +21,5 @@ const navStyle = (() => {
 
 // prevent content going under fixed header
 let header = document.querySelector('header-component');
-let proj = document.querySelector('.project-container');
-proj.style.marginTop = header.offsetHeight + 'px';
+let content = document.querySelector('.content-container');
+content.style.marginTop = header.offsetHeight + 'px';
