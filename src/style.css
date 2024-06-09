@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Red Hat Display', 'Trebuchet MS', Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 :root {
@@ -15,7 +16,7 @@ html {
 }
 
 a {
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
   text-decoration: none;
 }
 
@@ -51,8 +52,9 @@ body {
 }
 
 .page-link {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   text-align: center;
+  background-color: #f0f0f0;
 }
 
 @media only screen and (min-width: 500px) {
@@ -151,9 +153,14 @@ h4 {
 .project-box {
   padding: 5px;
   border-radius: 5px;
-  background-color: rgb(255, 217, 173);
+  border: 1px solid #f0f0f0;
 }
 
 .project-box:hover {
   background-color: #fcf1ff;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 2px;
 }
