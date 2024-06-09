@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Display', serif;
+  font-family: 'Red Hat Display', 'Trebuchet MS', Helvetica, sans-serif;
 }
 
 :root {
@@ -86,7 +86,7 @@ h1 {
 .link-container {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   font-size: 0.75rem;
   justify-content: center;
 }
