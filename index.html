@@ -8,12 +8,6 @@
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Red+Hat+Display"
     />
-    <script
-      src="/src/components/header.js"
-      type="text/javascript"
-      defer
-    ></script>
-    <script src="/src/main.js" defer></script>
     <link rel="stylesheet" href="/src/style.css" />
     <link
       rel="stylesheet"
@@ -29,19 +23,61 @@
   </head>
   <body>
     <div class="container">
-      <header-component></header-component>
-      <div class="content-container">
-        <h5>Hi, I'm Jared.</h5>
+    <div class="content-container">
+      <h5>👋 Hi, I'm Jared.</h5>
+      <p>
+        I'm a full-stack software engineer with hands-on experience across the entire development lifecycle—from design and implementation to deployment and maintenance. I adapt quickly to new technologies and systems, and I specialize in building efficient, scalable solutions.
+        <br><br>
+        Proficient in <strong>Java</strong>, <strong>Spring/Spring Boot</strong>, <strong>TypeScript</strong>, <strong>JavaScript</strong>, <strong>React.js</strong>, <strong>HTML/CSS</strong>,
+        <strong>Linux</strong>, <strong>Kubernetes</strong>, <strong>AWS</strong>, and <strong>Git</strong>.
+        <br><br>
 
-        <p>
-          I am a software engineer specializing in full-stack solutions.
-          Experienced in Linux, Java, Spring Boot, TypeScript, JavaScript, and React.
-          Currently studying computer science at
-          <a id="underline" href="https://www.cis.fiu.edu/"
-            >FIU's Knight Foundation School of Computing and Information
-            Sciences</a>.
-        </p>
-      </div>
+        <h5>Education</h5>
+        <ul>
+          <li>
+            <div class="exp-container">
+              <img class="company-logo" src="src/images/fiu.png" alt="FIU logo"><br />
+              <div>
+                <span class="company">Florida International University</span><br />
+                <span class="position">Bachelors in Computer Science, GPA: 3.88/4</span><br />
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <h5>Experience</h5>
+        <ul>
+          <li>
+            <div class="exp-container">
+              <img class="company-logo" src="src/images/aws.png" alt="aws logo"><br />
+              <div>
+                <span class="company">Amazon Web Services (AWS)</span><br />
+                <span class="position">Software Development Engineer Intern</span><br />
+              </div>
+            </div>
+            <ul>
+              <li>• Developed internal tooling for Amazon QuickSight to improve testing and developer workflows.</li>
+              <li>• Contributed to production systems across frontend and backend using Java, Spring, and TypeScript.</li>
+              <li>• Worked with distributed teams, CI/CD pipelines, and AWS’s internal developer ecosystem.</li>
+            </ul>
+          </li>
+          <br />
+          <li>
+            <div class="exp-container">
+              <img class="company-logo" src="src/images/disney.png" alt="disney logo"><br />
+              <div>
+                <span class="company">The Walt Disney Company</span><br />
+                <span class="position">Software Engineer Intern</span><br />
+              </div>
+            </div>
+            <ul>
+              <li>• Built and maintained internal web applications for Disney’s reservation center.</li>
+              <li>• Designed scalable REST APIs and improved performance of legacy systems.</li>
+              <li>• Collaborated with clients and engineers to deliver tailored solutions.</li>
+            </ul>
+          </li>
+        </ul>
+    </div>
     </div>
   </body>
 </html>
