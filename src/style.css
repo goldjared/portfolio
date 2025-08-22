@@ -134,4 +134,15 @@ h4 {
 .exp-container {
   display: flex;
   gap: 5px;
+  align-items: center;   /* vertically align everything */
+  justify-content: space-between; /* push left stuff and right stuff apart */
+}
+
+.exp-logo-title {
+  display: flex;
+  gap: 5px;
+}
+
+.exp-time-loc {
+  text-align: right;
 }
