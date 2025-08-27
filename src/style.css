@@ -146,3 +146,43 @@ h4 {
 .exp-time-loc {
   text-align: right;
 }
+
+/* Base section */
+.section {
+  position: relative;
+  max-width: 800px;
+  min-width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  color: #fff;             /* text color */
+  isolation: isolate;      /* ensures ::before sits behind content but inside this element */
+}
+
+/* Keep all children above the background layer */
+.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* The tilted background layer */
+.section::before {
+  content: "";
+  position: absolute;
+  opacity: 38%;
+  /* oversize so corners don’t show when rotated */
+  top: -18px; right: -18px; bottom: -18px; left: -18px;
+  z-index: 0;              /* behind content, not negative */
+  border-radius: 16px;
+  background: var(--bg, #333);
+  transform-origin: center;
+  transform: rotate(var(--rot, 0deg));
+  /* wonky horizontal edges */
+  box-shadow: 0 12px 28px rgba(0,0,0,0.22);
+  pointer-events: none;    /* clicks go through */
+}
+
+/* Individual section styles (color + rotation + edge shape) */
+.section-1 { --bg: #e6e9ff; --rot: -2deg;  --top-cut: 10%; --bot-cut: 90%; }
+.section-2 { --bg: #e0caff; --rot: 1.6deg; --top-cut: 7%;  --bot-cut: 93%; }
+.section-3 { --bg: #f6ffd7; --rot: -2deg;  --top-cut: 12%; --bot-cut: 88%; }
+
