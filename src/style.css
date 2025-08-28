@@ -116,6 +116,7 @@ h4 {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .company {
@@ -183,6 +184,6 @@ h4 {
 
 /* Individual section styles (color + rotation + edge shape) */
 .section-1 { --bg: #e6e9ff; --rot: -2deg;  --top-cut: 10%; --bot-cut: 90%; }
-.section-2 { --bg: #e0caff; --rot: 1.6deg; --top-cut: 7%;  --bot-cut: 93%; }
-.section-3 { --bg: #f6ffd7; --rot: -2deg;  --top-cut: 12%; --bot-cut: 88%; }
+.section-2 { --bg: #e0caff; --rot: -1.6deg; --top-cut: 7%;  --bot-cut: 93%; }
+.section-3 { --bg: #f6ffd7; --rot: 1.8deg;  --top-cut: 12%; --bot-cut: 88%; }
 
