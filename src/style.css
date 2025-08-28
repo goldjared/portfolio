@@ -152,11 +152,17 @@ h4 {
 .section {
   position: relative;
   max-width: 800px;
-  min-width: 100%;
   margin: 1rem auto;
   padding: 1rem;
   color: #fff;             /* text color */
   isolation: isolate;      /* ensures ::before sits behind content but inside this element */
+}
+
+@media only screen and (min-width: 900px) {
+  /* For desktop: */
+  .section {
+   min-width: 100%;
+  }
 }
 
 /* Keep all children above the background layer */
